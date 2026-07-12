@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBÈLÈTÈ FOOTBALL PRONOSTICS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-slate-50">
+    <!-- Navbar -->
+    <nav class="bg-white border-b">
+        <div class="max-w-screen-xl mx-auto px-5 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-emerald-600 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-futbol text-white"></i>
+                </div>
+                <span class="font-bold text-2xl">GBÈLÈTÈ <span class="text-emerald-600">FOOT</span></span>
+            </div>
+            <button onclick="goToWavePayment()" 
+                    class="px-5 py-2 bg-emerald-600 text-white font-bold rounded-3xl text-sm flex items-center gap-x-2">
+                <i class="fa-solid fa-lock"></i>
+                <span>Passer Premium</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="bg-emerald-700 text-white py-10 px-5 text-center">
+        <h1 class="text-4xl font-bold mb-3">Pronostics fiables.<br>Chaque jour.</h1>
+        <p class="text-emerald-100">2 pronostics gratuits + analyses Premium</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="max-w-screen-xl mx-auto px-5 py-6 grid grid-cols-2 gap-4 text-center">
+        <div><div class="text-3xl font-bold text-emerald-600">87%</div><div class="text-xs">Taux de réussite</div></div>
+        <div><div class="text-3xl font-bold text-emerald-600">5</div><div class="text-xs">Matchs/jour</div></div>
+    </div>
+
+    <!-- Pronostics -->
+    <div class="max-w-screen-xl mx-auto px-5 pb-10">
+        <h2 class="text-xl font-bold mb-4">Pronostics du 12 Juillet 2026</h2>
+        
+        <div class="bg-white border rounded-3xl p-5 mb-4">
+            <div class="font-bold">Malmö FF vs IFK Göteborg</div>
+            <div class="text-emerald-600 font-bold mt-2">Victoire Malmö FF (72%)</div>
+        </div>
+        
+        <div class="bg-white border rounded-3xl p-5">
+            <div class="font-bold">Bodø/Glimt vs KFUM Oslo</div>
+            <div class="text-emerald-600 font-bold mt-2">Victoire Bodø/Glimt (78%)</div>
+        </div>
+        
+        <div class="mt-6 text-center">
+            <button onclick="goToWavePayment()" 
+                    class="px-8 py-3 bg-emerald-600 text-white font-bold rounded-3xl">
+                Débloquer les 5 analyses Premium (1 500 FCFA)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function goToWavePayment() {
+            // Lien Wave réel fourni par l'utilisateur
+            window.open("https://pay.wave.com/m/M_ci_ZlNUhRHLcNKA/c/ci/?amount=1500", "_blank");
+        }
+    </script>
+</body>
+</html>
