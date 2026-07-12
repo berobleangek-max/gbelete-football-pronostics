@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBÈLÈTÈ FOOTBALL PRONOSTICS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Navbar -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-5 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-emerald-600 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-futbol text-white text-2xl"></i>
+                </div>
+                <span class="font-bold text-2xl">GBÈLÈTÈ <span class="text-emerald-600">FOOT</span></span>
+            </div>
+            <button onclick="goToWave()" class="px-5 py-2 bg-emerald-600 text-white font-bold rounded-3xl text-sm flex items-center gap-x-2">
+                <i class="fa-solid fa-lock"></i>
+                <span>Passer Premium</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="bg-emerald-700 text-white py-12 px-5">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <div class="inline px-4 py-1 bg-white/20 rounded-full text-sm mb-4">Mis à jour le 12 Juillet 2026</div>
+            <h1 class="text-5xl font-bold tracking-tight mb-4">Pronostics fiables.<br>Chaque jour.</h1>
+            <p class="text-emerald-100 max-w-md mx-auto">Analyses expertes • 2 pronostics gratuits • Analyses Premium complètes</p>
+            
+            <div class="mt-7 flex justify-center gap-3">
+                <button onclick="document.getElementById('pronostics').scrollIntoView({behavior:'smooth'})" 
+                        class="px-6 py-3 bg-white text-emerald-700 font-bold rounded-3xl">Voir les pronostics</button>
+                <button onclick="goToWave()" class="px-6 py-3 border border-white text-white font-bold rounded-3xl">Passer Premium</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="max-w-screen-xl mx-auto px-5 py-7 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div><div class="text-3xl font-bold text-emerald-600">87%</div><div class="text-xs text-slate-500">Taux de réussite (30j)</div></div>
+        <div><div class="text-3xl font-bold text-emerald-600">5</div><div class="text-xs text-slate-500">Matchs analysés/jour</div></div>
+        <div><div class="text-3xl font-bold text-emerald-600">12 400</div><div class="text-xs text-slate-500">Utilisateurs actifs</div></div>
+        <div><div class="text-3xl font-bold text-emerald-600">4.9/5</div><div class="text-xs text-slate-500">Note moyenne</div></div>
+    </div>
+
+    <!-- Pronostics -->
+    <div id="pronostics" class="max-w-screen-xl mx-auto px-5 pb-14">
+        <div class="mb-6">
+            <div class="text-emerald-600 text-xs font-bold tracking-[1.5px]">12 JUILLET 2026</div>
+            <div class="text-2xl font-bold">Pronostics du jour</div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-5">
+            <!-- Gratuit 1 -->
+            <div class="bg-white border rounded-3xl p-5">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-bold text-lg">Malmö FF vs IFK Göteborg</div>
+                        <div class="text-xs text-slate-500">Allsvenskan • 13h00</div>
+                    </div>
+                    <span class="px-3 py-1 text-xs bg-emerald-100 text-emerald-700 rounded-full">GRATUIT</span>
+                </div>
+                <div class="mt-4 p-4 bg-emerald-50 rounded-2xl">
+                    <div class="text-emerald-600 text-xs font-bold">PRONOSTIC</div>
+                    <div class="font-bold text-2xl text-emerald-700">Victoire Malmö FF</div>
+                    <div class="mt-3">
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="flex-1 h-2 bg-emerald-200 rounded-full"><div class="h-2 bg-emerald-600 rounded-full w-[72%]"></div></div>
+                            <span class="font-bold">72%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gratuit 2 -->
+            <div class="bg-white border rounded-3xl p-5">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <div class="font-bold text-lg">Bodø/Glimt vs KFUM Oslo</div>
+                        <div class="text-xs text-slate-500">Eliteserien • 13h30</div>
+                    </div>
+                    <span class="px-3 py-1 text-xs bg-emerald-100 text-emerald-700 rounded-full">GRATUIT</span>
+                </div>
+                <div class="mt-4 p-4 bg-emerald-50 rounded-2xl">
+                    <div class="text-emerald-600 text-xs font-bold">PRONOSTIC</div>
+                    <div class="font-bold text-2xl text-emerald-700">Victoire Bodø/Glimt</div>
+                    <div class="mt-3">
+                        <div class="flex items-center gap-2 text-sm">
+                            <div class="flex-1 h-2 bg-emerald-200 rounded-full"><div class="h-2 bg-emerald-600 rounded-full w-[78%]"></div></div>
+                            <span class="font-bold">78%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium teaser -->
+        <div class="mt-8 bg-white border border-emerald-200 rounded-3xl p-6 text-center">
+            <div class="text-emerald-600 font-bold mb-1">Analyses Premium disponibles</div>
+            <div class="text-sm text-slate-600 mb-4">Accède aux 5 analyses complètes + statistiques détaillées</div>
+            <button onclick="goToWave()" class="px-8 py-3 bg-emerald-600 text-white font-bold rounded-3xl">Débloquer avec Wave (1 500 FCFA)</button>
+        </div>
+    </div>
+
+    <script>
+        function goToWave() {
+            window.open("https://pay.wave.com/m/M_ci_ZlNUhRHLcNKA/c/ci/?amount=1500", "_blank");
+        }
+    </script>
+</body>
+</html>
